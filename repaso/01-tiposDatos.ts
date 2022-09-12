@@ -8,12 +8,12 @@ let nombre:string="sara";
 let cont:number=111;
 let acredits:boolean=false;
 
-let apaterno: number | string='juan';
+let apaterno: number | string='Sara';
 apaterno=238;
 
 var miVariable:string='Hola';
 /*La constante igual es unica y ya no cambia una vez definida*/
-const tem=234;
+const tem:number=234;
 
 
 
