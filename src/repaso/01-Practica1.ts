@@ -53,3 +53,34 @@ const pruebaAlumno:utlAlumno={
 }
 
 console.log(pruebaAlumno.mostrarDireccion);
+
+
+/*
+interface Direccion {
+    calle:string;
+    pais:string;
+    estado:string;
+}
+
+interface datosAlumno{
+    nombre:string;
+    edad:number;
+    direccion:Direccion;
+    mostrarDireccion:()=>string; 
+}
+
+const AlumnoUTL:datosAlumno={
+    nombre:'Sara',
+    edad:22,
+    direccion:{
+        calle:'hgu',
+        pais:'ggu',
+        estado:'gauh'
+    },
+    mostrarDireccion(){
+        return this.nombre+', '+this.direccion.estado+', '+this.direccion.pais;
+    }
+}
+const direccion=AlumnoUTL.mostrarDireccion();
+console.log(direccion);
+*/
