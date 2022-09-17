@@ -1,6 +1,6 @@
 
 //exportar e importar
-import { calcularIva, Producto } from "./repaso/05-destruc-funciones";
+import { calcularIva, Producto } from "./repaso/05-destruc-funciones.ts";
 
 const carrito:Producto[]=[
     {

@@ -1,5 +1,5 @@
 
-//Desestruturacion de objetos
+//Desestructuración de objetos
 
 interface Detalles{
     autor:string;
@@ -13,7 +13,7 @@ interface Reproductor{
     detalles: Detalles //propiedad de otro 
 }
 
-const reproductor:Reproductor={
+const reproducir:Reproductor={
     volumen:90,
     segundo:60,
     cancion:'Mañanitas',
@@ -24,13 +24,13 @@ const reproductor:Reproductor={
     }
 }
 
-const{cancion, volumen, segundo, detalles}=reproductor;
+const{cancion, volumen, segundo, detalles}=reproducir;
 
 const{autor, anio}=detalles;
 
-console.table('El nombre de la canción es: ' + reproductor.cancion);
-console.table('El volumen actual es: ' + reproductor.volumen);
-console.table('El segundo actual es: ' + reproductor.segundo);
+console.table('El nombre de la canción es: ' + reproducir.cancion);
+console.table('El volumen actual es: ' + reproducir.volumen);
+console.table('El segundo actual es: ' + reproducir.segundo);
 console.table('El autor de la canción es: ' + detalles.autor);
 
 //Arreglos

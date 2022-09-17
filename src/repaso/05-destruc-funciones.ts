@@ -1,5 +1,5 @@
 
-//desestructutacion de funciones 
+//desestructuración de funciones 
 export interface Producto{
     desc:string;
     precio:number;
@@ -14,7 +14,7 @@ const tablet:Producto={
     precio:6800,
 }
 
-export function calcularIva(productos:Producto[]):number{
+function calcularIva(productos:Producto[]):number{
     let total=0;
     productos.forEach((producto)=>{
         total+=producto.precio;
@@ -23,19 +23,19 @@ export function calcularIva(productos:Producto[]):number{
 }
 
 const articulos1=[telefono, tablet];
-const totalIva=calcularIva(articulos1);
-console.log('totalIva:', totalIva);
+const totaliva=calcularIva(articulos1);
+console.log('totalIva:', totaliva);
 
 //Desestructuracion de funciones
-function calcularIva(productos:Producto[]):[number,number]{
+export function calcularIVA(productos:Producto[]):[number,number]{
     let total=0;
     productos.forEach(({precio})=>{
         total+=precio;
     })
-    return [total, total*0.16];
+    return [total,total*0.16];
 }
 
-const articulos=[telefono, tablet];
-const [total,iva]=calcularIva(articulos);
+const articulos=[tablet, telefono];
+const [total,iva]=calcularIVA(articulos);
 console.log('Total: ', total);
 console.log('Total con Iva', iva);
