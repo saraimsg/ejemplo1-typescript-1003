@@ -25,7 +25,7 @@ let persona1:Persona;
 persona1=new Persona();
 
 let persona2: Persona;
-persona2=new Persona();
+
 
 persona1.nombre='Sarai';
 persona1.imprimir();

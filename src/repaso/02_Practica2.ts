@@ -1,7 +1,7 @@
 
 //Un programa que permita crear la formula general con resultado de x y y con clases 
 
-class formula{
+/*class formula{
     a: number=1;
     b: number=2;
     c: number=-8;
@@ -19,5 +19,6 @@ class formula{
 }
 let forGeneral=new formula();
 forGeneral.resultado();
-forGeneral.impri();
+forGeneral.impri(); */
+
 
